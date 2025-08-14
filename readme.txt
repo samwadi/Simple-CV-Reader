@@ -1,7 +1,86 @@
-I have created 2 versions for this project, one with simple logic and coding, and the second with pretrained libraries and AI tools.
+# 📄 CV Scanner & Information Extractor
 
-In both cases the desired output is met, and the system returns all the desired information from scanning a CV. But I have realized that my own cv format is build in a way that is difficult for the automated tools to read and scan, it extracts the desired information but some data is mixed with the other, and they are not well displayed.
+This project extracts structured information from CVs and resumes in **PDF** or **Word (.docx)** formats.  
+It comes with **two versions**:
+1. 🧩 **Regex-based version (`main1.py`)** – Simple, lightweight, no dependencies beyond parsing libraries.  
+2. 🤖 **AI-powered version (`main2.py`)** – Uses **spaCy** and NLP techniques for smarter entity recognition, plus a **GUI** built with Tkinter.  
 
-On the other hand, the program should work effectively with most CV formats.
+---
 
-Note that the first script (main.py) does not have a GUI.
+## ✨ Features
+- ✅ Extracts key details:
+  - Name  
+  - Email  
+  - Phone number  
+  - Education  
+  - Work experience  
+- 📂 Supports **PDF** and **DOCX** formats  
+- 🖥️ **CLI output** in `main1.py`  
+- 🖼️ **GUI display** in `main2.py`  
+- 🧠 Uses **regex** in version 1, and **spaCy NLP models** in version 2  
+
+---
+
+## 🚀 How to Run
+
+### Option 1: Regex-based (Simple)
+```bash
+python main1.py
+Opens a file dialog to select a PDF or DOCX CV.
+
+Prints extracted information directly in the terminal.
+
+Option 2: AI-powered with GUI
+bash
+Copy
+Edit
+python main2.py
+Opens a file dialog to select a PDF or DOCX CV.
+
+Uses spaCy to extract entities and additional details.
+
+Displays results in a clean Tkinter GUI.
+
+📂 Project Structure
+pgsql
+Copy
+Edit
+CV-Extractor/
+│── main1.py        # Regex-based version (no GUI)
+│── main2.py        # AI/NLP version with GUI
+│── requirements.txt
+│── README.md
+🛠️ Requirements
+Install dependencies with:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Example requirements.txt:
+
+nginx
+Copy
+Edit
+spacy
+pdfplumber
+python-docx
+tkinter
+And download the spaCy model (needed for main2.py):
+
+bash
+Copy
+Edit
+python -m spacy download en_core_web_sm
+📌 Notes
+Custom CV formats may lead to slightly mixed or misaligned data, especially if the layout is unconventional.
+
+For most standard CV templates, extraction should work effectively.
+
+main1.py is better for quick, lightweight usage.
+
+main2.py is more robust and accurate, but requires installing spaCy and loading the NLP model.
+
+🧑‍💻 Author
+Made with ❤️ by Bassam Wadi
+📧 Contact: [Your Email]
