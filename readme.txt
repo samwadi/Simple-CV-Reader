@@ -26,52 +26,47 @@ It comes with **two versions**:
 ### Option 1: Regex-based (Simple)
 ```bash
 python main1.py
+
+
 Opens a file dialog to select a PDF or DOCX CV.
 
 Prints extracted information directly in the terminal.
 
 Option 2: AI-powered with GUI
-bash
-Copy
-Edit
+
 python main2.py
+
+
 Opens a file dialog to select a PDF or DOCX CV.
 
 Uses spaCy to extract entities and additional details.
 
 Displays results in a clean Tkinter GUI.
 
-📂 Project Structure
-pgsql
-Copy
-Edit
 CV-Extractor/
 │── main1.py        # Regex-based version (no GUI)
 │── main2.py        # AI/NLP version with GUI
 │── requirements.txt
 │── README.md
+
+
 🛠️ Requirements
 Install dependencies with:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
 Example requirements.txt:
 
-nginx
-Copy
-Edit
 spacy
 pdfplumber
 python-docx
 tkinter
+
 And download the spaCy model (needed for main2.py):
 
-bash
-Copy
-Edit
 python -m spacy download en_core_web_sm
+
+
 📌 Notes
 Custom CV formats may lead to slightly mixed or misaligned data, especially if the layout is unconventional.
 
@@ -83,4 +78,4 @@ main2.py is more robust and accurate, but requires installing spaCy and loading 
 
 🧑‍💻 Author
 Made with ❤️ by Bassam Wadi
-📧 Contact: [Your Email]
+📧 Contact: samwadi97@gmail.com
